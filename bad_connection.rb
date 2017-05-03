@@ -4,31 +4,23 @@
 # How do we achieve this goal? (Sketch an algorithm using pseudocode)
 
 ready_to_quit = false
+goodbye_counter = 0
+
 puts "HELLO, THIS IS A GROCERY STORE!"
 
-input = gets
-until ready_to_quit == true
-  if input.empty?
+until ready_to_quit
+  input = gets.chomp
+  if input == ""
     puts "HELLO?!"
-    break
-    # doesn't work
-  elsif input == input.upcase && input != "GOODBYE!"
-    puts "NO, THIS IS NOT A PET STORE"
-    break
-    # works for all caps but not if input is "GOODBYE!"
   elsif input != input.upcase
     puts "I AM HAVING A HARD TIME HEARING YOU."
-    break
-    # works
-  elsif input == "GOODBYE!"
+  elsif input == input.upcase and input != "GOODBYE!"
+    puts "NO, THIS IS NOT A PET STORE"
+  elsif input == "GOODBYE!" && goodbye_counter == 0
     puts "ANYTHING ELSE I CAN HELP WITH?"
-    break
-    # doesn't work - returns first if
+    goodbye_counter = 1
+  else input == "GOODBYE!" && goodbye_counter != 0
+    puts "THANKS FOR CALLING!"
+    ready_to_quit = true
   end
-  ready_to_quit == true
-  puts "THANK YOU FOR CALLING!"
-  # doesn't work
 end
-
-
-# ??????

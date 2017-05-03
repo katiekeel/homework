@@ -1,10 +1,10 @@
 # Pseudocoding 101
 
-# Learning Goals
+## Learning Goals
 - Be able to define the term pseudocode and algorithm
 - Be able to use pseudocode to describe the flow of an algorithm’s implementation
 
-# Part 1 - Writing
+## Part 1 - Writing
 
 First, spend 5 minutes writing an “algorithm” that explains how to tie your shoes. Try to be as explicit and specific as possible. Assume your reader is a human, but a very literal one.
 
@@ -18,25 +18,25 @@ First, spend 5 minutes writing an “algorithm” that explains how to tie your 
 8. Pull the middle of the second lace through the knot to make another loop.
 9. Pull the middles of both loops until laces are tight enough.
 
-# Part 2 - Doing
+## Part 2 - Doing
 
 Now, pair up with your neighbor. The person whose name is alphabetically first will read their algorithm step-by-step to the person whose name is alphabetically last. The person whose name is alphabetically last will attempt to tie their shoes according only to the instructions from their partner.
 
 You can repeat instructions if needed, but don’t add any instructions beyond what you had originally written down.
 
-# Big-Picture
+## Big-Picture
 
-## What is an algorithm?
+### What is an algorithm?
 
 A programming algorithm is a computer procedure that is a lot like a recipe (called a procedure) and tells your computer precisely what steps to take to solve a problem or reach a goal. The ingredients are called inputs, while the results are called the outputs.
 
-## What is pseudocode?
+### What is pseudocode?
 
 Pseudocode is an informal high-level description of the operating principle of a computer program or other algorithm.
 Programming – what makes it hard? (Translating ideas into code? Or coming up with ideas?)
 An Iterative Process
 
-## A generalized process for solving technical problems:
+### A generalized process for solving technical problems:
 
 - How will you know when the problem is solved? (Identify the big-picture goal)
 - How do you want to use the software? (Identify the “interface”)
@@ -49,26 +49,37 @@ An Iterative Process
 
 Answer the questions from steps 1 through 4 for the following problem. When you get to steps 3 and 4, repeat them at least 3 times for increasing levels of complexity.
 
-# Common Words
+## Common Words
 
-## Problem:
+### Problem:
 
 I have a text document and want to know “What are the three most common words in the text?”
 
-Extension: Let’s exclude the following: I, you, he, she, it, we, they, they, a, an.
+1. Search the document
+2. Find the three most common words
+3. Extract them from the text
+4. Place the words in the outputs
 
-# Odds & Evens
+### Extension: Let’s exclude the following: I, you, he, she, it, we, they, they, a, an.
 
-## Problem:
+if match, delete I, you, etc
+Then run the above
+
+## Odds & Evens
+
+### Problem:
 
 I have a file with 100 numbers. I want to create two new files: one with all the odds and one with all the evens.
 
-Extension: Don’t allow duplicates in the output
+even_file << if.even?
+odd_file << if.odd?
 
-# Lats & Longs
+### Extension: Don’t allow duplicates in the output
 
-## Problem:
+## Lats & Longs
+
+### Problem:
 
 I have a file with 100 latitude/longitude pairs. Find the point that’s closest to the north pole.
 
-Extension: Find the one closest to the magnetic north pole.
+### Extension: Find the one closest to the magnetic north pole.

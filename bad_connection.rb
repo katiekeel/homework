@@ -8,7 +8,7 @@ goodbye_counter = 0
 
 puts "HELLO, THIS IS A GROCERY STORE!"
 
-until ready_to_quit
+until ready_to_quit == true
   input = gets.chomp
   if input == ""
     puts "HELLO?!"

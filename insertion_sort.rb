@@ -23,4 +23,5 @@ sorted_array.each_with_index do |item, index|
   sorted_array.insert(insert_index, current_value)
 end
 
+
 puts sorted_array
